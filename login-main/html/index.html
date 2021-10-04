@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <!-- <script lang="JavaScript">
+        // function go(){
+        //     if (document.login.contraseña.value=='Contraseña' && document.login.correo.value=='Usuario'){
+        //         document.login.submit();
+        //         alert("Bienvenido");
+        //         location.href="./html/principal.html"
+        //     }
+        //     else{
+        //         alert("Por favor Ingrese correo y contraseña correctos");
+        //     }
+        // }
+    </script> -->
+
+    <script src="./js/validacion.js"></script>
+    <form name="login" class="login">
+        <h4>Iniciar Sesión</h4>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="contraseña" id="contreseña" placeholder="Ingresa tu contraseña">
+        <input onclick=go() type=button value=Acceder class="button">
+        <!-- <input class="button" type="button" value="Iniciar Sesión"> -->
+        <p>¿No tienes cuenta? <a href="./html/Registro.html">Registrate aquí</a></p>
+    </form>
+
+</body>
+</html>
